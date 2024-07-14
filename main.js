@@ -6,7 +6,6 @@ import './css/reset.scss';
 import './css/style.scss';
 import './css/selectors.scss';
 import './css/footer.scss';
-import { lang } from './scripts/supportedLanguages';
 
 document.getElementById('app').innerHTML = `  
         <header class="header"></header>

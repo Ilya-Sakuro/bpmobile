@@ -1,16 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap);
 @font-face {
     font-family: 'SF Pro';
-    src: url('./Fonts/SFPRODISPLAYREGULAR.OTF') format('truetype');
+    src: url('./public/Fonts/SFPRODISPLAYREGULAR.OTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 /* iPhone 8+ */
-@media (max-width: 414px) and (max-height: 736px) {
+@media (max-width: 375px) and (max-height: 667px) {
     :root {
-        min-width: 415px;
-        min-height: 738px;
+        min-width: 375px;
+        min-height: 667px;
         color: white;
         background-color: #242424;
         font-family: -apple-system, 'SF Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -23,19 +23,49 @@
         align-items: center;
         justify-content: space-between;
     }
+    .header {
+        position: relative;
+    }
     .main {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
+
     .header__title {
         margin: 118px 0px 0px;
-        font-family: SF Pro;
-        font-size: 42px;
-        font-weight: 860;
-        line-height: 46px;
+        font-family: 'SF Pro';
+        font-size: 44px;
+        font-weight: 800;
+        line-height: 45px;
         text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .close {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: 35px;
+        left: -48px;
+    }
+    .close:after {
+        content: '';
+        height: 15px;
+        border-left: 1.8px solid #877a9b;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 28px;
+    }
+
+    .close:before {
+        content: '';
+        height: 15px;
+        border-left: 1.8px solid #877a9b;
+        position: absolute;
+        transform: rotate(-45deg);
+        left: 28px;
     }
     .slides {
         display: flex;
@@ -55,6 +85,14 @@
         width: 104.4px;
         height: 138.6px;
         padding: 0px 7.2px 10.8px;
+
+        font-family: 'SF Pro';
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13.13px;
+        text-align: left;
+        letter-spacing: 0.5px;
+
         background: linear-gradient(
                 180deg,
                 rgba(0, 0, 0, 0.0001) 0%,
@@ -76,6 +114,13 @@
         height: 138.6px;
         padding: 0px 7.2px 10.8px;
 
+        font-family: 'SF Pro';
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13.13px;
+        text-align: left;
+        letter-spacing: 0.5px;
+
         background: linear-gradient(
                 180deg,
                 rgba(0, 0, 0, 0.0001) 0%,
@@ -95,6 +140,14 @@
         width: 104.4px;
         height: 138.6px;
         padding: 0px 7.2px 10.8px;
+
+        font-family: 'SF Pro';
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13.13px;
+        text-align: left;
+        letter-spacing: 0.5px;
+
         background: linear-gradient(
                 180deg,
                 rgba(0, 0, 0, 0.0001) 0%,

@@ -28,7 +28,9 @@ export class Selectors {
             <div class="yearly__best-offer">${translations['BEST OFFER']}</div>
         </button> 
         <button id='btn2' class="selecrors__btn  align-center">
+        <div class='yearly__per-year'>
             <div class="access ">${translations['WEEKLY ACCESS']}</div>
+            </div>
             <div class="price">${translations['{{price}} <br>per week'].replace(
                 '{{price}}',
                 weeklyPrice,
