@@ -4,13 +4,15 @@ export class Footer {
     constructor() {}
     template(translations) {
         return `
-          <div class="header__title">${translations['Terms of Use']}</div>
-          <div class="header__title">${translations['Privacy Policy']}</div>
-          <div class="header__title">${translations['Restore']}</div>
+        <div class="link__block">
+          <a class="footer__link" href="#">${translations['Terms of Use']}</a>
+          <a class="footer__link" href="#">${translations['Privacy Policy']}</a>
+          <a class="footer__link" href="#">${translations['Restore']}</a>
+        </div>  
           `;
     }
     async render() {
-        loadTranslations(await lang).then(() => {
+        loadTranslations(lang).then(() => {
             document.querySelector('.footer').innerHTML = this.template(translations);
         });
     }

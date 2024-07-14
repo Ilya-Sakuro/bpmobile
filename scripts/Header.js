@@ -8,7 +8,7 @@ export class Header {
           `;
     }
     async render() {
-        loadTranslations(await lang).then(() => {
+        loadTranslations(lang).then(() => {
             document.querySelector('.header').innerHTML = this.template(translations);
         });
     }

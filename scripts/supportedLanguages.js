@@ -22,7 +22,7 @@ export const loadTranslations = async lang => {
         const response = await fetch(`./data/${lang}.json`);
         const data = await response.json();
 
-        translations = data; // Присваиваем глобальному объекту данные перевода
+        translations = data;
     } catch (error) {
         console.error('Error loading language file:', error);
     }
