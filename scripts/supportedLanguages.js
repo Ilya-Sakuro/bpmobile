@@ -19,7 +19,7 @@ export const lang = getSupportedLanguages(supportedLanguages);
 
 export const loadTranslations = async lang => {
     try {
-        const response = await fetch(`./public/data/${lang}.json`);
+        const response = await fetch(`../data/${lang}.json`);
         const data = await response.json();
 
         translations = data;

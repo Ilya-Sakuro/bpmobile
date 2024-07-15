@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap);
 @font-face {
     font-family: 'SF Pro';
-    src: url('./public/Fonts/SFPRODISPLAYREGULAR.OTF') format('truetype');
+    src: url('../public/Fonts/SFPRODISPLAYREGULAR.OTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -16,7 +16,7 @@
         color: white;
         background-color: #242424;
         font-family: -apple-system, 'SF Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        background: url('./img/bg.png') no-repeat center center;
+        background: url('../img/bg.png') no-repeat center center;
         background-size: contain;
     }
     #app {
@@ -123,7 +123,7 @@
                 rgba(6, 9, 37, 0.558287) 76.68%,
                 #15072f 100%
             ),
-            url('./img/unlimitedBG.png') no-repeat center center;
+            url('../img/unlimitedBG.png') no-repeat center center;
         background-size: contain;
         border-radius: 9px;
         box-shadow: 0px 0px 21.6px 0px rgba(255, 130, 228, 0.24);
@@ -151,7 +151,7 @@
                 rgba(6, 9, 37, 0.373) 76.68%,
                 #15072f 100%
             ),
-            url('./img/exclusiveBG.png') no-repeat center center;
+            url('../public/img/exclusiveBG.png') no-repeat center center;
         background-size: contain;
         border-radius: 9px;
         box-shadow: 0px 0px 21.6px 0px rgba(255, 130, 228, 0.24);
@@ -178,7 +178,7 @@
                 rgba(6, 9, 37, 0.558287) 76.68%,
                 #15072f 100%
             ),
-            url('./img/Group 37@3x.png') no-repeat center center;
+            url('../img/Group 37@3x.png') no-repeat center center;
         background-size: contain;
         border-radius: 9px;
         border-radius: 9px;

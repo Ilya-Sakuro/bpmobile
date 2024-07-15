@@ -1,7 +1,7 @@
-import { Footer } from './scripts/footer.js';
-import { Header } from './scripts/header.js';
-import { Selectors } from './scripts/selectors.js';
-import { Slides } from './scripts/slides.js';
+import { Footer } from '/scripts/Footer.js';
+import { Header } from '/scripts/Header.js';
+import { Selectors } from '/scripts/Selectors.js';
+import { Slides } from './scripts/Slides.js';
 import './css/reset.scss';
 import './css/style.scss';
 import './css/selectors.scss';
