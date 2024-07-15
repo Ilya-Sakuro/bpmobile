@@ -13,7 +13,7 @@ export class Selectors {
         const bestOfferPrice = formatPrice(0.48, lang);
 
         return `
-        <button id='btn1' class="selecrors__btn ">
+        <button id='btn1' class="selecrors__btn active">
         <div class='yearly__per-year' lang="${lang}">
             <div class="access">${translations['YEARLY ACCESS']}</div>
             <div class="price" lang="${lang}">${translations['Just {{price}} per year'].replace(

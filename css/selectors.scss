@@ -1,4 +1,4 @@
-/* iPhone 8+ */
+/* iPhone SE */
 @media (min-width: 375px) and (min-height: 667px) {
     .selecrors {
         display: flex;
@@ -122,5 +122,22 @@
         &:lang(ja) {
             width: fit-content;
         }
+    }
+}
+@media (min-width: 390px) and (min-height: 844px) {
+    .selecrors {
+        margin-top: 10px;
+        width: fit-content;
+        height: 195px;
+    }
+    .selecrors__btn {
+        width: 340px;
+    }
+    .yearly__per-year {
+        margin-right: 50px;
+    }
+    .button {
+        margin-top: 10px;
+        width: 340px;
     }
 }

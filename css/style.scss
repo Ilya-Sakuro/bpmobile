@@ -5,10 +5,8 @@
     font-weight: normal;
     font-style: normal;
 }
-// * {
-//     border: 1px solid red;
-// }
-/* iPhone 8+ */
+
+/* iPhone SE */
 @media (min-width: 375px) and (min-height: 667px) {
     :root {
         min-width: 375px;
@@ -182,5 +180,32 @@
         background-size: contain;
         border-radius: 9px;
         border-radius: 9px;
+    }
+}
+
+@media (min-width: 390px) and (min-height: 844px) {
+    :root {
+        background: url('../Arta_13iphone_1/bg2.png') no-repeat center center;
+        background-size: contain;
+    }
+
+    .close {
+        top: 70px;
+        left: -55px;
+        &:lang(fr) {
+        }
+        &:lang(de) {
+        }
+        &:lang(pt) {
+        }
+        &:lang(es) {
+        }
+    }
+    .header__title {
+        margin: 240px 0px 0px 0px;
+    }
+    .slides {
+        margin: 33px 0px 40px;
+        width: 341px;
     }
 }
