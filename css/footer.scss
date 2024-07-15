@@ -12,6 +12,18 @@
         display: flex;
         justify-content: space-between;
         width: 262px;
+        &:lang(fr) {
+            width: fit-content;
+        }
+        &:lang(de) {
+            width: fit-content;
+        }
+        &:lang(es) {
+            width: fit-content;
+        }
+        &:lang(pt) {
+            width: fit-content;
+        }
     }
     .footer__link {
         text-decoration: none;
@@ -22,5 +34,20 @@
         letter-spacing: 0.6px;
         text-align: center;
         color: #84848a;
+        &:lang(fr) {
+            margin-right: 10px;
+        }
+        &:lang(de) {
+            font-size: 10px;
+            margin-right: 10px;
+        }
+        &:lang(es) {
+            font-size: 10px;
+            margin-right: 10px;
+        }
+        &:lang(pt) {
+            font-size: 10px;
+            margin-right: 10px;
+        }
     }
 }

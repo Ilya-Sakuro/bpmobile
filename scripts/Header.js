@@ -1,11 +1,11 @@
-import { lang, loadTranslations, translations } from './supportedLanguages';
+import { lang, loadTranslations, translations } from './supportedLanguages.js';
 
 export class Header {
     constructor() {}
     template(translations) {
         return `
-        <a class="close" href='#'></a>
-          <h1 class="header__title">${translations['Get Unlimited <br>Access']}</h1>
+        <a class="close" href='#' lang="${lang}"></a>
+          <h1 class="header__title" lang="${lang}">${translations['Get Unlimited <br>Access']}</h1>
           `;
     }
     async render() {

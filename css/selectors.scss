@@ -25,6 +25,12 @@
     .yearly__per-year {
         width: 141px;
         margin-right: 37px;
+        &:lang(fr) {
+            width: 160px;
+        }
+        &:lang(de) {
+            width: 160px;
+        }
     }
     .access {
         font-family: 'SF Pro';
@@ -32,6 +38,12 @@
         font-weight: 600;
         line-height: 19.09px;
         text-align: left;
+        &:lang(fr) {
+            font-size: 13px;
+        }
+        &:lang(de) {
+            font-size: 13px;
+        }
     }
 
     .price {
@@ -41,6 +53,15 @@
         line-height: 19.09px;
         text-align: left;
         color: #a5a5a5;
+        &:lang(fr) {
+            font-size: 11px;
+        }
+        &:lang(es) {
+            font-size: 12px;
+        }
+        &:lang(pt) {
+            font-size: 12px;
+        }
     }
     .yearly__best-price {
         width: 61px;
@@ -51,6 +72,24 @@
         line-height: 19.09px;
         text-align: left;
         color: #a5a5a5;
+        &:lang(fr) {
+            width: 90px;
+        }
+        &:lang(de) {
+            width: 90px;
+        }
+        &:lang(ja) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 65px;
+        }
+        &:lang(es) {
+            width: 90px;
+        }
+        &:lang(pt) {
+            width: 90px;
+        }
     }
     .yearly__best-offer {
         position: absolute;
@@ -80,5 +119,8 @@
         background-color: #ffffff;
         border: #ffffff;
         letter-spacing: 1px;
+        &:lang(ja) {
+            width: fit-content;
+        }
     }
 }

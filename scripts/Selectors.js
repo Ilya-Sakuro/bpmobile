@@ -1,4 +1,4 @@
-import { lang, loadTranslations, translations } from './supportedLanguages';
+import { lang, loadTranslations, translations } from './supportedLanguages.js';
 export class Selectors {
     constructor() {}
     template(translations, lang) {
@@ -14,29 +14,28 @@ export class Selectors {
 
         return `
         <button id='btn1' class="selecrors__btn ">
-        <div class='yearly__per-year'>
+        <div class='yearly__per-year' lang="${lang}">
             <div class="access">${translations['YEARLY ACCESS']}</div>
-            <div class="price">${translations['Just {{price}} per year'].replace(
-                '{{price}}',
-                yearlyPrice,
-            )}</div>
+            <div class="price" lang="${lang}">${translations['Just {{price}} per year'].replace(
+            '{{price}}',
+            yearlyPrice,
+        )}</div>
          </div>
-            <div class="yearly__best-price">${translations['{{price}} <br>per week'].replace(
-                `{{price}}`,
-                bestOfferPrice,
-            )}</div>
+            <div class="yearly__best-price" lang="${lang}">${translations[
+            '{{price}} <br>per week'
+        ].replace(`{{price}}`, bestOfferPrice)}</div>
             <div class="yearly__best-offer">${translations['BEST OFFER']}</div>
         </button> 
         <button id='btn2' class="selecrors__btn  align-center">
         <div class='yearly__per-year'>
-            <div class="access ">${translations['WEEKLY ACCESS']}</div>
+            <div class="access" lang="${lang}">${translations['WEEKLY ACCESS']}</div>
             </div>
             <div class="price">${translations['{{price}} <br>per week'].replace(
                 '{{price}}',
                 weeklyPrice,
             )}</div>
         </button>
-          <button class="button" >${translations['Continue']}</button>
+          <button class="button" lang="${lang}">${translations['Continue']}</button>
           `;
     }
 

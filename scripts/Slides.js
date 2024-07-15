@@ -1,4 +1,4 @@
-import { lang, loadTranslations, translations } from './supportedLanguages';
+import { lang, loadTranslations, translations } from './supportedLanguages.js';
 
 export class Slides {
     constructor() {}
