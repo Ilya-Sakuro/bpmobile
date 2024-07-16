@@ -7,15 +7,15 @@
 }
 
 /* iPhone SE */
-@media (min-width: 375px) and (min-height: 667px) {
+@media (min-width: 320px) {
     :root {
         min-width: 375px;
         min-height: 667px;
         color: white;
         background-color: #242424;
         font-family: -apple-system, 'SF Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        background: url('../img/bg.png') no-repeat center center;
-        background-size: contain;
+        background: url('../img/bg.jpg') no-repeat center center;
+        background-size: cover;
     }
     #app {
         display: flex;
@@ -43,12 +43,12 @@
         text-align: center;
         letter-spacing: 2px;
         &:lang(de) {
-            margin: 70px 0px 0px;
+            margin: 140px 0px 0px;
             font-size: 25px;
             line-height: 35px;
         }
         &:lang(pt) {
-            margin: 70px 0px 0px;
+            margin: 120px 0px 0px;
         }
     }
 
@@ -59,7 +59,7 @@
         top: 35px;
         left: -48px;
         &:lang(fr) {
-            left: -21px;
+            left: -5px;
         }
         &:lang(de) {
             left: -21px;
@@ -69,6 +69,9 @@
         }
         &:lang(es) {
             left: -21px;
+        }
+        &:lang(ja) {
+            left: -26px;
         }
     }
     .close:after {
@@ -96,14 +99,14 @@
         font-size: 11px;
         font-weight: 400;
         line-height: 13.13px;
-        color: #ffffff;
+        color: #e3e2e5;
     }
 
     .unlimited {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        width: 104.4px;
+        width: 103px;
         height: 138.6px;
         padding: 0px 7.2px 10.8px;
 
@@ -121,9 +124,9 @@
                 rgba(6, 9, 37, 0.558287) 76.68%,
                 #15072f 100%
             ),
-            url('../img/unlimitedBG.png') no-repeat center center;
-        background-size: contain;
-        border-radius: 9px;
+            url('../img/unlimitedBG.jpg') no-repeat center center;
+        background-size: cover;
+        border-radius: 11px;
         box-shadow: 0px 0px 21.6px 0px rgba(255, 130, 228, 0.24);
     }
 
@@ -131,7 +134,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        width: 104.4px;
+        width: 103px;
         height: 138.6px;
         padding: 0px 7.2px 10.8px;
 
@@ -149,16 +152,16 @@
                 rgba(6, 9, 37, 0.373) 76.68%,
                 #15072f 100%
             ),
-            url('../public/img/exclusiveBG.png') no-repeat center center;
-        background-size: contain;
-        border-radius: 9px;
+            url('../public/img/exclusiveBG.jpg') no-repeat center center;
+        background-size: cover;
+        border-radius: 11px;
         box-shadow: 0px 0px 21.6px 0px rgba(255, 130, 228, 0.24);
     }
     .avatars {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        width: 104.4px;
+        width: 103px;
         height: 138.6px;
         padding: 0px 7.2px 10.8px;
 
@@ -176,33 +179,45 @@
                 rgba(6, 9, 37, 0.558287) 76.68%,
                 #15072f 100%
             ),
-            url('../img/Group 37@3x.png') no-repeat center center;
-        background-size: contain;
-        border-radius: 9px;
-        border-radius: 9px;
+            url('../img/Group 37@3x.jpg') no-repeat center center;
+        background-size: cover;
+        border-radius: 11px;
     }
 }
 
-@media (min-width: 390px) and (min-height: 844px) {
+@media (min-width: 376px) {
     :root {
-        background: url('../Arta_13iphone_1/bg2.png') no-repeat center center;
-        background-size: contain;
+        background: url('../img/bg2.jpg') no-repeat center center;
+        background-size: cover;
     }
 
     .close {
         top: 70px;
         left: -55px;
         &:lang(fr) {
+            left: -10px;
         }
         &:lang(de) {
+            left: -31px;
         }
-        &:lang(pt) {
+        &:lang(ja) {
+            left: -31px;
         }
         &:lang(es) {
+            left: -53px;
+        }
+        &:lang(pt) {
+            left: -26px;
         }
     }
     .header__title {
         margin: 240px 0px 0px 0px;
+        &:lang(de) {
+            margin: 262px 0px 0px;
+        }
+        &:lang(pt) {
+            margin: 242px 0px 0px;
+        }
     }
     .slides {
         margin: 33px 0px 40px;

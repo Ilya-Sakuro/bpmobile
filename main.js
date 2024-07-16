@@ -2,6 +2,7 @@ import { Footer } from '/scripts/Footer.js';
 import { Header } from '/scripts/Header.js';
 import { Selectors } from './scripts/Selectors.js';
 import { Slides } from './scripts/Slides.js';
+import { lang, loadTranslations } from './scripts/supportedLanguages.js';
 import './css/reset.scss';
 import './css/style.scss';
 import './css/selectors.scss';
@@ -16,6 +17,8 @@ document.getElementById('app').innerHTML = `
         <footer class="footer"></footer>
 `;
 
-const components = [new Header(), new Slides(), new Selectors(), new Footer()];
+loadTranslations(lang).then(translations => {
+    const components = [new Header(), new Slides(), new Selectors(), new Footer()];
 
-components.forEach(component => component.render());
+    components.forEach(component => component.render(translations));
+});

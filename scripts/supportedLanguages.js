@@ -1,4 +1,3 @@
-export let translations = {};
 const supportedLanguages = ['de', 'en', 'es', 'fr', 'ja', 'pt'];
 export function getSupportedLanguages(supportedLanguages) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -22,7 +21,7 @@ export const loadTranslations = async lang => {
         const response = await fetch(`../data/${lang}.json`);
         const data = await response.json();
 
-        translations = data;
+        return data;
     } catch (error) {
         console.error('Error loading language file:', error);
     }

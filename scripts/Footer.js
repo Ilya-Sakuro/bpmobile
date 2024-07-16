@@ -1,4 +1,4 @@
-import { lang, loadTranslations, translations } from './supportedLanguages.js';
+import { lang } from './supportedLanguages.js';
 
 export class Footer {
     constructor() {}
@@ -11,9 +11,7 @@ export class Footer {
         </div>  
           `;
     }
-    async render() {
-        loadTranslations(lang).then(() => {
-            document.querySelector('.footer').innerHTML = this.template(translations);
-        });
+    render(translations) {
+        document.querySelector('.footer').innerHTML = this.template(translations);
     }
 }

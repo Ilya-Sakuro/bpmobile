@@ -1,4 +1,4 @@
-import { lang, loadTranslations, translations } from './supportedLanguages.js';
+import { lang } from './supportedLanguages.js';
 
 export class Header {
     constructor() {}
@@ -8,9 +8,7 @@ export class Header {
           <h1 class="header__title" lang="${lang}">${translations['Get Unlimited <br>Access']}</h1>
           `;
     }
-    async render() {
-        loadTranslations(lang).then(() => {
-            document.querySelector('.header').innerHTML = this.template(translations);
-        });
+    render(translations) {
+        document.querySelector('.header').innerHTML = this.template(translations);
     }
 }

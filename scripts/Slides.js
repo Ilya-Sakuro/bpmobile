@@ -1,5 +1,3 @@
-import { lang, loadTranslations, translations } from './supportedLanguages.js';
-
 export class Slides {
     constructor() {}
     template(translations) {
@@ -9,9 +7,7 @@ export class Slides {
             <div class="avatars">${translations['Magic Avatars <br>With 20% Off']}</div>
           `;
     }
-    async render() {
-        loadTranslations(lang).then(() => {
-            document.querySelector('.slides').innerHTML = this.template(translations);
-        });
+    render(translations) {
+        document.querySelector('.slides').innerHTML = this.template(translations);
     }
 }

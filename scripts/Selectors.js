@@ -1,4 +1,4 @@
-import { lang, loadTranslations, translations } from './supportedLanguages.js';
+import { lang } from './supportedLanguages.js';
 export class Selectors {
     constructor() {}
     template(translations, lang) {
@@ -39,30 +39,28 @@ export class Selectors {
           `;
     }
 
-    async render() {
-        loadTranslations(lang).then(() => {
-            document.querySelector('.selecrors').innerHTML = this.template(translations, lang);
+    render(translations) {
+        document.querySelector('.selecrors').innerHTML = this.template(translations, lang);
 
-            const button1 = document.getElementById('btn1');
-            const button2 = document.getElementById('btn2');
-            const btnContinue = document.querySelector('.button');
+        const button1 = document.getElementById('btn1');
+        const button2 = document.getElementById('btn2');
+        const btnContinue = document.querySelector('.button');
 
-            button1.addEventListener('click', function () {
-                button1.classList.add('active');
-                button2.classList.remove('active');
-            });
+        button1.addEventListener('click', function () {
+            button1.classList.add('active');
+            button2.classList.remove('active');
+        });
 
-            button2.addEventListener('click', function () {
-                button2.classList.add('active');
-                button1.classList.remove('active');
-            });
-            btnContinue.addEventListener('click', function () {
-                if (button1.classList.contains('active')) {
-                    window.location.href = 'https://apple.com';
-                } else if (button2.classList.contains('active')) {
-                    window.location.href = 'https://google.com';
-                }
-            });
+        button2.addEventListener('click', function () {
+            button2.classList.add('active');
+            button1.classList.remove('active');
+        });
+        btnContinue.addEventListener('click', function () {
+            if (button1.classList.contains('active')) {
+                window.location.href = 'https://apple.com';
+            } else if (button2.classList.contains('active')) {
+                window.location.href = 'https://google.com';
+            }
         });
     }
 }
