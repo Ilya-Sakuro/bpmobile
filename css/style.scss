@@ -1,12 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap);
 @font-face {
     font-family: 'SF Pro';
-    src: url('../public/Fonts/SFPRODISPLAYREGULAR.OTF') format('truetype');
+    src: url('/Fonts/SFPRODISPLAYREGULAR.OTF') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-/* iPhone SE */
 @media (min-width: 320px) {
     :root {
         min-width: 375px;
@@ -14,7 +12,7 @@
         color: white;
         background-color: #242424;
         font-family: -apple-system, 'SF Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        background: url('../img/bg.jpg') no-repeat center center;
+        background: url('../img/bg@1xSE.jpg') no-repeat center center;
         background-size: cover;
     }
     #app {
@@ -36,7 +34,6 @@
 
     .header__title {
         margin: 118px 0px 0px;
-        font-family: 'SF Pro';
         font-size: 44px;
         font-weight: 800;
         line-height: 45px;
@@ -110,7 +107,6 @@
         height: 138.6px;
         padding: 0px 7.2px 10.8px;
 
-        font-family: 'SF Pro';
         font-size: 11px;
         font-weight: 400;
         line-height: 13.13px;
@@ -124,7 +120,7 @@
                 rgba(6, 9, 37, 0.558287) 76.68%,
                 #15072f 100%
             ),
-            url('../img/unlimitedBG.jpg') no-repeat center center;
+            url('../img/unlimitedBG@1x.jpg') no-repeat center center;
         background-size: cover;
         border-radius: 11px;
         box-shadow: 0px 0px 21.6px 0px rgba(255, 130, 228, 0.24);
@@ -138,7 +134,6 @@
         height: 138.6px;
         padding: 0px 7.2px 10.8px;
 
-        font-family: 'SF Pro';
         font-size: 11px;
         font-weight: 400;
         line-height: 13.13px;
@@ -152,7 +147,7 @@
                 rgba(6, 9, 37, 0.373) 76.68%,
                 #15072f 100%
             ),
-            url('../public/img/exclusiveBG.jpg') no-repeat center center;
+            url('/img/exclusiveBG@1x.jpg') no-repeat center center;
         background-size: cover;
         border-radius: 11px;
         box-shadow: 0px 0px 21.6px 0px rgba(255, 130, 228, 0.24);
@@ -165,7 +160,6 @@
         height: 138.6px;
         padding: 0px 7.2px 10.8px;
 
-        font-family: 'SF Pro';
         font-size: 11px;
         font-weight: 400;
         line-height: 13.13px;
@@ -179,18 +173,108 @@
                 rgba(6, 9, 37, 0.558287) 76.68%,
                 #15072f 100%
             ),
-            url('../img/Group 37@3x.jpg') no-repeat center center;
+            url('../img/Avatar@1x.jpg') no-repeat center center;
         background-size: cover;
         border-radius: 11px;
     }
-}
-
-@media (min-width: 376px) {
-    :root {
-        background: url('../img/bg2.jpg') no-repeat center center;
-        background-size: cover;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        :root {
+            background: url('../img/bg@2xSE.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .unlimited {
+            background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.0001) 0%,
+                    rgba(4, 6, 26, 0.0001) 62.04%,
+                    rgba(6, 9, 37, 0.558287) 76.68%,
+                    #15072f 100%
+                ),
+                url('../img/unlimitedBG@2x.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .exclusive {
+            background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.0001) 0%,
+                    rgba(4, 6, 26, 0.0001) 62.04%,
+                    rgba(6, 9, 37, 0.373) 76.68%,
+                    #15072f 100%
+                ),
+                url('/img/exclusiveBG@2x.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .avatars {
+            background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.0001) 0%,
+                    rgba(4, 6, 26, 0.0001) 62.04%,
+                    rgba(6, 9, 37, 0.558287) 76.68%,
+                    #15072f 100%
+                ),
+                url('../img/Avatar@2x.jpg') no-repeat center center;
+            background-size: cover;
+        }
     }
 
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+        :root {
+            background: url('../img/bg@3xSE.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .unlimited {
+            background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.0001) 0%,
+                    rgba(4, 6, 26, 0.0001) 62.04%,
+                    rgba(6, 9, 37, 0.558287) 76.68%,
+                    #15072f 100%
+                ),
+                url('../img/unlimitedBG@3x.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .exclusive {
+            background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.0001) 0%,
+                    rgba(4, 6, 26, 0.0001) 62.04%,
+                    rgba(6, 9, 37, 0.373) 76.68%,
+                    #15072f 100%
+                ),
+                url('/img/exclusiveBG@3x.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .avatars {
+            background: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0.0001) 0%,
+                    rgba(4, 6, 26, 0.0001) 62.04%,
+                    rgba(6, 9, 37, 0.558287) 76.68%,
+                    #15072f 100%
+                ),
+                url('../img/Avatar@3x.jpg') no-repeat center center;
+            background-size: cover;
+        }
+    }
+}
+
+@media (min-width: 375px) and (min-height: 804px) {
+    :root {
+        background: url('../img/bg@1x13.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        :root {
+            background: url('../img/bg@2x13.jpg') no-repeat center center;
+            background-size: cover;
+        }
+    }
+    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+        :root {
+            background: url('../img/bg@3x13.jpg') no-repeat center center;
+            background-size: cover;
+        }
+    }
     .close {
         top: 70px;
         left: -55px;
