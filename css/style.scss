@@ -177,85 +177,6 @@
         background-size: cover;
         border-radius: 11px;
     }
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        :root {
-            background: url('../img/bg@2xSE.jpg') no-repeat center center;
-            background-size: cover;
-        }
-        .unlimited {
-            background: linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0.0001) 0%,
-                    rgba(4, 6, 26, 0.0001) 62.04%,
-                    rgba(6, 9, 37, 0.558287) 76.68%,
-                    #15072f 100%
-                ),
-                url('../img/unlimitedBG@2x.jpg') no-repeat center center;
-            background-size: cover;
-        }
-        .exclusive {
-            background: linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0.0001) 0%,
-                    rgba(4, 6, 26, 0.0001) 62.04%,
-                    rgba(6, 9, 37, 0.373) 76.68%,
-                    #15072f 100%
-                ),
-                url('/img/exclusiveBG@2x.jpg') no-repeat center center;
-            background-size: cover;
-        }
-        .avatars {
-            background: linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0.0001) 0%,
-                    rgba(4, 6, 26, 0.0001) 62.04%,
-                    rgba(6, 9, 37, 0.558287) 76.68%,
-                    #15072f 100%
-                ),
-                url('../img/Avatar@2x.jpg') no-repeat center center;
-            background-size: cover;
-        }
-    }
-
-    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-        :root {
-            background: url('../img/bg@3xSE.jpg') no-repeat center center;
-            background-size: cover;
-        }
-        .unlimited {
-            background: linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0.0001) 0%,
-                    rgba(4, 6, 26, 0.0001) 62.04%,
-                    rgba(6, 9, 37, 0.558287) 76.68%,
-                    #15072f 100%
-                ),
-                url('../img/unlimitedBG@3x.jpg') no-repeat center center;
-            background-size: cover;
-        }
-        .exclusive {
-            background: linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0.0001) 0%,
-                    rgba(4, 6, 26, 0.0001) 62.04%,
-                    rgba(6, 9, 37, 0.373) 76.68%,
-                    #15072f 100%
-                ),
-                url('/img/exclusiveBG@3x.jpg') no-repeat center center;
-            background-size: cover;
-        }
-        .avatars {
-            background: linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0.0001) 0%,
-                    rgba(4, 6, 26, 0.0001) 62.04%,
-                    rgba(6, 9, 37, 0.558287) 76.68%,
-                    #15072f 100%
-                ),
-                url('../img/Avatar@3x.jpg') no-repeat center center;
-            background-size: cover;
-        }
-    }
 }
 
 @media (min-width: 375px) and (min-height: 804px) {
@@ -263,18 +184,7 @@
         background: url('../img/bg@1x13.jpg') no-repeat center center;
         background-size: cover;
     }
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        :root {
-            background: url('../img/bg@2x13.jpg') no-repeat center center;
-            background-size: cover;
-        }
-    }
-    @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
-        :root {
-            background: url('../img/bg@3x13.jpg') no-repeat center center;
-            background-size: cover;
-        }
-    }
+
     .close {
         top: 70px;
         left: -55px;
@@ -306,5 +216,96 @@
     .slides {
         margin: 33px 0px 40px;
         width: 341px;
+    }
+}
+@media (min-width: 320px) and (min-resolution: 192dpi) {
+    :root {
+        background: url('../img/bg@2xSE.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .unlimited {
+        background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.0001) 0%,
+                rgba(4, 6, 26, 0.0001) 62.04%,
+                rgba(6, 9, 37, 0.558287) 76.68%,
+                #15072f 100%
+            ),
+            url('../img/unlimitedBG@2x.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .exclusive {
+        background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.0001) 0%,
+                rgba(4, 6, 26, 0.0001) 62.04%,
+                rgba(6, 9, 37, 0.373) 76.68%,
+                #15072f 100%
+            ),
+            url('/img/exclusiveBG@2x.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .avatars {
+        background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.0001) 0%,
+                rgba(4, 6, 26, 0.0001) 62.04%,
+                rgba(6, 9, 37, 0.558287) 76.68%,
+                #15072f 100%
+            ),
+            url('../img/Avatar@2x.jpg') no-repeat center center;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 320px) and (min-resolution: 288dpi) {
+    :root {
+        background: url('../img/bg@3xSE.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .unlimited {
+        background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.0001) 0%,
+                rgba(4, 6, 26, 0.0001) 62.04%,
+                rgba(6, 9, 37, 0.558287) 76.68%,
+                #15072f 100%
+            ),
+            url('../img/unlimitedBG@3x.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .exclusive {
+        background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.0001) 0%,
+                rgba(4, 6, 26, 0.0001) 62.04%,
+                rgba(6, 9, 37, 0.373) 76.68%,
+                #15072f 100%
+            ),
+            url('/img/exclusiveBG@3x.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .avatars {
+        background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0.0001) 0%,
+                rgba(4, 6, 26, 0.0001) 62.04%,
+                rgba(6, 9, 37, 0.558287) 76.68%,
+                #15072f 100%
+            ),
+            url('../img/Avatar@3x.jpg') no-repeat center center;
+        background-size: cover;
+    }
+}
+@media (min-width: 375px) and (min-height: 804px) and (min-resolution: 192dpi) {
+    :root {
+        background: url('../img/bg@2x13.jpg') no-repeat center center;
+        background-size: cover;
+    }
+}
+@media (min-width: 375px) and (min-height: 804px) and (min-resolution: 288dpi) {
+    :root {
+        background: url('../img/bg@3x13.jpg') no-repeat center center;
+        background-size: cover;
     }
 }
